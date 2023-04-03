@@ -69,7 +69,7 @@ nav {
     float: right;
     padding: 8px;
     color: white;
-    transition: .5s;
+    transition: all .5s;
 }
 
 #login a:hover{
@@ -77,4 +77,65 @@ nav {
     transition: .2;
 }
 
-/* ----------- barra de navegação --------------- */
+/*------------ Banner do site ------------------- */
+
+#banner {
+    display: flex;
+    
+    height: 70vh;
+    background-image: url(imagens/pexels-richa-sharma-5328009.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#texto-banner {
+    display: flex;
+    height: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+
+#texto-banner h1{
+    text-align: center;
+    padding: 0 20%;
+}
+
+#texto-banner a {
+    position: absolute;
+    top: 60%;
+    background-color: #159A9C;
+    color: white;
+    padding: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .7s;
+}
+
+#texto-banner a:hover {
+    background-color: hsla(181, 76%, 35%, 0.158);
+    transition: .3s;
+}
+
+#servicos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+    background-color: rgba(128, 128, 128, 0.185);
+}
+
+.campos-servicos {
+    position: relative;
+    width: 40%;
+    height: 400px;
+    margin: 0 20px;
+    margin-top: 60px;
+    
+    
+}
+
