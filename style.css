@@ -21,6 +21,10 @@ body::-webkit-scrollbar {
     --amarelo-saturado: #F2C879;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* ----------- barra de navegação --------------- */
 
 nav {
@@ -114,10 +118,35 @@ nav {
 }
 
 #texto-banner h1{
+    overflow: hidden;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 800;
     color: white;
     text-align: center;
     padding: 0 20%;
+    font-size: 4em;
 }
+
+.line-up h1 {
+    animation: 3s anim-lineUp ease-out;
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
 
 #texto-banner a {
     position: absolute;
