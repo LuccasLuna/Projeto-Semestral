@@ -144,6 +144,7 @@ nav {
     }
   }
 
+
 #texto-banner a {
     position: absolute;
     top: 60%;
@@ -159,6 +160,27 @@ nav {
     background-color: #84b1d977;
     transition: .3s;
 }
+
+.fade {
+    animation: 3s anim-fade ease-out;
+  }
+  @keyframes anim-fade {
+    0% {
+      opacity: 0;
+      
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.8;
+      
+    }
+    100% {
+      opacity: 1;
+      
+    }
+  }
 
 /*---------------- main ------------------------*/
 
