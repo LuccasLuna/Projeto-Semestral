@@ -7,9 +7,13 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/*  esconder barra de rolagem 
+
 body::-webkit-scrollbar { 
         display: none;
-    }
+    } 
+    
+*/
 
 
 :root {
@@ -82,7 +86,7 @@ nav {
     display: flex;
     list-style: none;
     float: right;
-
+    
 }
 
 #login a {
@@ -102,6 +106,7 @@ nav {
 
 #banner {
     display: flex;
+    width: 100%;
     height: 70vh;
     background-image: url(imagens/pexels-tranmautritam-326508.jpg);
     background-repeat: no-repeat;
@@ -116,7 +121,6 @@ nav {
     margin: 0 auto;
     align-items: center;
     justify-content: center;
-    
     
 }
 
