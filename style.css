@@ -7,6 +7,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body::-webkit-scrollbar { 
+        display: none;
+    }
+
+
 :root {
     --azul-escuro: #222F40;
     --azul-escuro-cinza: #64758C;
