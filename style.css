@@ -16,7 +16,7 @@ body::-webkit-scrollbar {
     --azul-escuro: #222F40;
     --azul-escuro-cinza: #64758C;
     --azul-bebe-saturado: #84B1D9;
-    --azul-bebe-desaturado: #8BBBD9;
+    --azul-bebe-dessaturado: #8BBBD9;
     --azul-claro-cinza: #C4CCD9;
     --amarelo-saturado: #F2C879;
 }
@@ -173,7 +173,7 @@ nav {
       opacity: 0;
     }
     50% {
-      opacity: 0.8;
+      opacity: 0.6;
       
     }
     100% {
