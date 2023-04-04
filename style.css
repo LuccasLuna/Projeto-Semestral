@@ -86,7 +86,7 @@ nav {
     display: flex;
     list-style: none;
     float: right;
-    
+    align-items: center;
 }
 
 #login a {
@@ -100,6 +100,13 @@ nav {
 #login a:hover{
     color: var(--azul-bebe-saturado);
     transition: .2;
+}
+
+#login i {
+    padding-left: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    
 }
 
 /*------------ Banner do site ------------------- */
@@ -159,7 +166,7 @@ nav {
 
 #texto-banner a {
     position: absolute;
-    top: 60%;
+    top: 55%;
     background-color: var(--azul-bebe-saturado);
     color: white;
     padding: 25px;
