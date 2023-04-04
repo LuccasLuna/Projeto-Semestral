@@ -87,7 +87,7 @@ nav {
 }
 
 #login a:hover{
-    color: #F2C879;
+    color: var(--azul-bebe-saturado);
     transition: .2;
 }
 
