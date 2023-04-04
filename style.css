@@ -71,16 +71,12 @@ nav {
     transition: .3;
 }
 
-
-
-
 #login ul {
     display: flex;
     list-style: none;
     float: right;
 
 }
-
 
 #login a {
     text-decoration: none;
