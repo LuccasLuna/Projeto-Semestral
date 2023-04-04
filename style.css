@@ -125,7 +125,8 @@ nav {
     font-weight: 800;
     color: white;
     text-align: center;
-    padding: 10% 20%;
+    padding: 0 20%;
+    padding-bottom: 5%;
     font-size: var(--font-h1);
     
 }
@@ -142,7 +143,7 @@ nav {
       opacity: 0;
     }
     50% {
-      opacity: 1;
+      opacity: 0.8;
       transform: translateY(0%);
     }
     100% {
