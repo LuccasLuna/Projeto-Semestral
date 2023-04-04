@@ -7,6 +7,15 @@
     font-family: 'Roboto', sans-serif;
 }
 
+:root {
+    --azul-escuro: #222F40;
+    --azul-escuro-cinza: #64758C;
+    --azul-bebe-saturado: #84B1D9;
+    --azul-bebe-desaturado: #8BBBD9;
+    --azul-claro-cinza: #C4CCD9;
+    --amarelo-saturado: #F2C879;
+}
+
 /* ----------- barra de navegação --------------- */
 
 nav {
@@ -18,7 +27,7 @@ nav {
     align-items: center;
     width: 100%;
     height: 70px;
-    background-color: #1d262b;
+    background-color: var(--azul-escuro);
     color: white;
     font-size: 1em;
     text-transform: uppercase;
@@ -39,16 +48,16 @@ nav {
     transition: .6s;
     text-decoration: none;
     color: white;
+    
     border-radius: 5px;
 }
 
 #navegacao a:focus{
-    color: #159A9C;
-    
+    color: #8BBBD9;  
 }
 
 #navegacao a:hover{
-    background-color: #159A9C;
+    background-color: var(--azul-bebe-saturado); 
     color: white;
     transition: .3;
 }
@@ -73,7 +82,7 @@ nav {
 }
 
 #login a:hover{
-    color: #159A9C;
+    color: #F2C879;
     transition: .2;
 }
 
@@ -81,11 +90,10 @@ nav {
 
 #banner {
     display: flex;
-    
     height: 70vh;
-    background-image: url(imagens/pexels-richa-sharma-5328009.jpg);
+    background-image: url(imagens/pexels-tranmautritam-326508.jpg);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: bottom center;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -96,11 +104,12 @@ nav {
     margin: 0 auto;
     align-items: center;
     justify-content: center;
-    color: white;
+    
     
 }
 
 #texto-banner h1{
+    color: white;
     text-align: center;
     padding: 0 20%;
 }
@@ -108,7 +117,7 @@ nav {
 #texto-banner a {
     position: absolute;
     top: 60%;
-    background-color: #159A9C;
+    background-color: var(--azul-bebe-saturado);
     color: white;
     padding: 25px;
     text-decoration: none;
@@ -117,16 +126,18 @@ nav {
 }
 
 #texto-banner a:hover {
-    background-color: hsla(181, 76%, 35%, 0.158);
+    background-color: #84b1d977;
     transition: .3s;
 }
+
+/*---------------- main ------------------------*/
 
 #servicos {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: wrap;
-    background-color: rgba(128, 128, 128, 0.185);
+    background-color: #c4ccd96c;
 }
 
 .campos-servicos {
