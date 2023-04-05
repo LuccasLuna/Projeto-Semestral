@@ -261,8 +261,8 @@ section#contato h2{
 .contato-form {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 2% 20%;
+  justify-content: center;
+  
   
 }
 
@@ -270,10 +270,11 @@ section#contato h2{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin: 2%;
 }
 
 .contato-detalhes input{
-  width: 450px;
+  width: 350px;
   height: 50px;
   padding: 10px;
   margin-bottom: 10px;
@@ -284,12 +285,12 @@ section#contato h2{
 .mensagem {
   display: flex;
   flex-direction: column;
-  
+  margin: 2%;
 }
 
 .mensagem textarea {
   padding: 3%;
-  width: 450px;
+  width: 350px;
   border: none;
   border-radius: 10px;
   resize: none;
@@ -298,9 +299,9 @@ section#contato h2{
 .mensagem button {
   background-color: var(--azul-escuro-cinza);
   color: white;
-  margin-top: 20px;
   width: 90px;
   height: 50px;
+  margin-top: 10px;
   border: none;
   border-radius: 10px;
   text-transform: uppercase;
