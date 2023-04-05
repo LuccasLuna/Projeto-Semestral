@@ -177,6 +177,10 @@ nav {
     transition: .7s;
 }
 
+#texto-banner a > i{
+  padding-left: 10px;
+}
+
 #texto-banner a:hover {
     background-color: #84b1d977;
     transition: .3s;
@@ -306,6 +310,7 @@ section#contato h2{
   border-radius: 10px;
   text-transform: uppercase;
   font-weight: 500;
+  transition: .3s;
 }
 
 .mensagem button i {
@@ -313,8 +318,9 @@ section#contato h2{
 }
 
 .mensagem button:hover {
-  background-color: var(--azul-bebe-dessaturado);
+  background-color: var(--azul-bebe-saturado);
   cursor: pointer;
+  
 }
 
 /* -------------- footer --------------------- */
@@ -344,6 +350,10 @@ footer a {
   color: var(--azul-claro-cinza);
 }
 
+#fale-conosco {
+  margin: 2%;
+}
+
 #fale-conosco p {
   padding-top: 10px;
   font-weight: 500;
@@ -352,13 +362,16 @@ footer a {
 #container-mapa-endereco {
   display: flex;
   flex-wrap: wrap;
-  
+  margin: 2%;
 }
 
 #mapa {
   padding-right: 10px;
 }
 
+#contrainer {
+  margin: 2%;
+}
 
 #redes-sociais{
   display: flex;
