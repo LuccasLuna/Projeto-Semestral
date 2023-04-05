@@ -11,9 +11,13 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <meta> <!-- nao esquecer meta tags-->
-    <meta> 
-    <meta>
+    
+    <!-----------------TAGS META------------------------>
+
+    <meta name="description" content="Empresa de desenvolvimento web,Maior comunicação entre cliente e agência, Sem tempo ? Não tem problema! Nós vamos até você, apresentando soluções inovadoras para sua necessidade, tudo isso sem obrigação nenhuma, contate-nos e converse com um de nossos representantes !"> <!---MUDAR ESTA FRASE-->
+
+    <meta name="keywords" content="agencia digital, loja virtual, website, rede sociais, marketing, sites">
+    <meta name="author" content="Raianny Caroline e Lucas Luna">
 
 </head>
 <body>
@@ -66,6 +70,27 @@
     </main>
 
     <section id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato, tire suas duvidas.</p>
+
+        <form action="contato.php" method="post" autocomplete="on" class="contato-form" >
+
+            <div class="contato-detalhes">
+
+                <input type="text" name="nome" id="nome" placeholder="Nome Completo" required>
+                <input type="text" name="assunto" id="assunto" placeholder="Assunto" required>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+
+            </div>
+                
+            <div class="mensagem">
+
+                <textarea name="messagem" id="mensagem" cols="30" rows="15" required minlength="100" maxlength="500" placeholder="Mensagem"></textarea>
+
+                <button type="submit">Enviar<i class="fa-sharp fa-solid fa-paper-plane"></i></button>
+            </div>
+
+        </form>
 
     </section>
     
@@ -106,7 +131,6 @@
             </div>
            
         </div>
-
 
         <div id="container">
             <h4>Mídias sociais</h4>

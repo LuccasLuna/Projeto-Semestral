@@ -21,6 +21,7 @@ body::-webkit-scrollbar {
     /*---cores---*/
 
     --azul-escuro: #222f40;
+    --azul-escuro-saturado:#222844;
     --azul-preto: #161d29;
     --azul-escuro-cinza: #64758C;
     --azul-bebe-saturado: #84B1D9;
@@ -222,6 +223,7 @@ nav {
 
 .campos-servicos p {
     text-align: justify;
+    font-size: 1em;
 }
 
 .campos-servicos h3 {
@@ -234,10 +236,93 @@ nav {
     position: absolute;
 }
 
+/* ----------------- Contato --------------------- */
+
+section#contato {
+  width: 100%;
+  height: auto;
+  background-color: var(--azul-escuro-saturado);
+  color: white;
+}
+
+#contato h2  {
+  text-align: center;
+}
+
+#contato p {
+  padding-top: 10px;
+  text-align: center;
+}
+
+section#contato h2{
+  padding-top: 20px;
+}
+
+.contato-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2% 20%;
+  
+}
+
+.contato-detalhes {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.contato-detalhes input{
+  width: 450px;
+  height: 50px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.mensagem {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.mensagem textarea {
+  padding: 3%;
+  width: 450px;
+  border: none;
+  border-radius: 10px;
+  resize: none;
+}
+
+.mensagem button {
+  background-color: var(--azul-escuro-cinza);
+  color: white;
+  margin-top: 20px;
+  width: 90px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.mensagem button i {
+  padding-left: 5px;
+}
+
+.mensagem button:hover {
+  background-color: var(--azul-bebe-dessaturado);
+  cursor: pointer;
+}
+
+/* -------------- footer --------------------- */
+
 footer {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
-  height: 250px;
+  min-height: 250px;
   padding: 0 18%;
   padding-top: 40px;
   justify-content: space-between;
@@ -265,6 +350,7 @@ footer a {
 
 #container-mapa-endereco {
   display: flex;
+  flex-wrap: wrap;
   
 }
 
@@ -272,9 +358,7 @@ footer a {
   padding-right: 10px;
 }
 
-#container-redes-sociais {
-  
-}
+
 #redes-sociais{
   display: flex;
   
@@ -293,3 +377,4 @@ footer a {
 #container p {
   padding-top: 40px;
 }
+
