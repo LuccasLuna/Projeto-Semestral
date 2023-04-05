@@ -21,6 +21,7 @@ body::-webkit-scrollbar {
     /*---cores---*/
 
     --azul-escuro: #222F40;
+    --azul-preto: #161d29;
     --azul-escuro-cinza: #64758C;
     --azul-bebe-saturado: #84B1D9;
     --azul-bebe-dessaturado: #8BBBD9;
@@ -239,7 +240,7 @@ footer {
   height: 250px;
   align-items: center;
   justify-content: space-around;
-  background-color: var(--azul-escuro);
+  background-color: var(--azul-preto);
   color: var(--azul-claro-cinza);
 }
 
