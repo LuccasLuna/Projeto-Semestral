@@ -233,3 +233,30 @@ nav {
     position: absolute;
 }
 
+footer {
+  display: flex;
+  width: 100%;
+  height: 250px;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--azul-escuro);
+  color: var(--azul-claro-cinza);
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--azul-claro-cinza);
+}
+
+#redes-sociais ul {
+  display: flex;
+}
+
+#redes-sociais a {
+  
+  padding: 0 10px;
+}
