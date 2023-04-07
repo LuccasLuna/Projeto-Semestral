@@ -40,76 +40,73 @@ html {
 
 /* ----------- barra de navegação --------------- */
 
-nav {
-    display: flex;
-    position: sticky;
-    top: 0;
-    z-index: 2;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 70px;
-    background-color: var(--azul-escuro);
-    color: white;
-    font-size: 1em;
-    text-transform: uppercase;
+nav{
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  height: auto;
+  background-color: rgb(25, 27, 49);
+  color: white; 
+  text-transform: uppercase;
+  transition: .3s ease-in-out;
+}
 
+#container-nav {
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+}
+
+#lista-nav ul{
+  display: flex;
+  list-style: none;
+  
+}
+
+#lista-nav a{
+  text-decoration: none;
+  color: white;
+  padding: 17px 15px;
+  border-radius: 5px;
+  transition: .5-s ease-in-out;
+}
+
+#lista-nav a:hover{
+  background-color: rgb(91, 103, 145);
 }
 
 
-
-#navegacao ul {
-    display: flex;
-    list-style: none;
-    
+#login ul{
+  display: flex;
+  list-style: none;
 }
 
-
-#navegacao a{
-    padding: 17px 10px;
-    transition: .6s;
-    text-decoration: none;
-    color: white;
-    
-    border-radius: 5px;
+#login li a{
+  text-decoration: none;
+  color: white;
+  padding: 17px 15px;
+  border-radius: 5px;
+  background-color: rgb(91, 103, 145);
+  border: 1px solid transparent;
+  transition: .4s ease-in-out;
 }
 
-#navegacao a:focus{
-    color: #8BBBD9;  
+#login li a:hover{
+  background-color: var(--azul-escuro-saturado);
+  border: 1px solid white;
 }
 
-#navegacao a:hover{
-    background-color: var(--azul-bebe-saturado); 
-    color: white;
-    transition: .3;
+#icone-mobile {
+  display: none;
 }
 
-#login ul {
-    display: flex;
-    list-style: none;
-    float: right;
-    align-items: center;
+#menu-mobile {
+  display: none;
 }
 
-#login a {
-    text-decoration: none;
-    float: right;
-    padding: 8px;
-    color: white;
-    transition: all .5s;
-}
-
-#login a:hover{
-    color: var(--azul-bebe-saturado);
-    transition: .2;
-}
-
-#login i {
-    padding-left: 10px;
-    font-size: 1.2em;
-    cursor: pointer;
-    
-}
 
 /*------------ Banner do site ------------------- */
 
