@@ -7,6 +7,10 @@ function tamanhoTela() {
     if (window.innerWidth >= 800) {
         menuMobile.classList.remove('active');
     }
+
+    if(window.innerWidth >= 800){
+        botao.classList.replace('fa-xmark', 'fa-bars');
+    }
 }
 
 function clicou() {
