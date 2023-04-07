@@ -36,6 +36,8 @@ body::-webkit-scrollbar {
 
 html {
     scroll-behavior: smooth;
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
 }
 
 /* ----------- barra de navegação --------------- */
@@ -275,7 +277,7 @@ section#contato h2{
 }
 
 .contato-detalhes input{
-  width: 350px;
+  width: 500px;
   height: 50px;
   padding: 10px;
   margin-bottom: 10px;
@@ -291,7 +293,7 @@ section#contato h2{
 
 .mensagem textarea {
   padding: 3%;
-  width: 350px;
+  width: 500px;
   border: none;
   border-radius: 10px;
   resize: none;

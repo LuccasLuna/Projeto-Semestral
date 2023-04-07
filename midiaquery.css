@@ -63,10 +63,28 @@ Telas Grandes: acima de 1200px
 }
 
 
+@media screen and (max-width: 500px) {
+    .contato-detalhes input {
+        width: 350px;
+    }
+
+    .mensagem textarea {
+        width: 350px;
+    }
+}
+
 @media screen and (max-width: 450px) {
 
 
     #mapa {
         display: none;
+    }
+
+    .contato-detalhes input {
+        width: 280px;
+    }
+
+    .mensagem textarea {
+        width: 280px;
     }
 }
