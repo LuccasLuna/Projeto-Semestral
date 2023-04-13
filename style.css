@@ -7,13 +7,13 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/*  esconder barra de rolagem 
+/*  esconder barra de rolagem */
 
 body::-webkit-scrollbar { 
         display: none;
     } 
     
-*/
+
 
 
 :root {
@@ -214,7 +214,7 @@ nav{
     align-items: center;
     justify-content: center;
     flex-flow: wrap;
-    background-color: #c4ccd96c;
+    background-color: #fff;
     padding-bottom: 50px;
 }
 
@@ -247,32 +247,29 @@ nav{
 /*---------------- projetos -------------------*/
 
 #portifolio {
-  background-color: #222f40;
+  background-color: #f0f0f0;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   height: auto;
   justify-content: center;
-
+  padding: 0 10%;
 }
 
 #portifolio h2 {
   width: 100%;
   text-align: center;
   padding-top: 50px;
-  color: white;
+  color: black;
   font-size: 2rem;
   text-transform: uppercase;
 }
 
 .projetos {
   position: relative;
-  background-color: #64758C;
   width: 350px;
   height: 350px;
-  margin: 5%;
-  border-radius: 10px 10px 0 0;
-
+  margin: 2%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -332,13 +329,13 @@ nav{
   padding: 15px;
   text-decoration: none;
   color: white;
-  background-color: rgb(91, 103, 145);
+  background-color: #84B1D9;
   border-radius: 10px;
   transition: .4s ease-in-out;
 }
 
 .botao-projeto:hover{
-  background-color: var(--azul-escuro-saturado);
+  background-color: rgb(91, 103, 145);
 }
 
 .texto-projeto:hover{
