@@ -210,23 +210,26 @@ nav{
 
 #servicos {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     flex-flow: wrap;
     background-color: #c4ccd96c;
+    padding-bottom: 50px;
 }
 
 .campos-servicos {
     
     width: 40%;
-    height: 400px;
+    height: auto;
     margin: 0 20px;
-    margin-top: 90px;
+    margin-top: 50px;
 }
 
 .campos-servicos p {
     text-align: justify;
     font-size: 1em;
+    padding-bottom: 20px;
 }
 
 .campos-servicos h3 {
@@ -235,8 +238,9 @@ nav{
 }
 
 #servicos > h2 {
-    top: 80%;
-    position: absolute;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
 }
 
 
