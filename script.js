@@ -35,5 +35,11 @@ function clicouLink(){
     
     else
         menuMobile.classList.add('active');   
+
+        if(menuMobile.classList.contains('active'))
+            botao.classList.replace('fa-bars', 'fa-xmark');
+
+        else
+            botao.classList.replace('fa-xmark', 'fa-bars');
 }
 
