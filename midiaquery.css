@@ -9,7 +9,7 @@ Desktop: 992px até 1200px
 Telas Grandes: acima de 1200px
 */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) { 
 
 
     #lista-nav {

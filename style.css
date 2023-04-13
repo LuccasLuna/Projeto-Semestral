@@ -73,7 +73,7 @@ nav{
   color: white;
   padding: 17px 15px;
   border-radius: 5px;
-  transition: .5-s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 #lista-nav a:hover{
@@ -116,7 +116,7 @@ nav{
     display: flex;
     width: 100%;
     height: 70vh;
-    background-image: url(imagens/pexels-tranmautritam-326508.jpg);
+    background-image: url(imagens/pexels-lee-campbell-115655.jpg);
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: cover;
@@ -237,6 +237,109 @@ nav{
 #servicos > h2 {
     top: 80%;
     position: absolute;
+}
+
+
+/*---------------- projetos -------------------*/
+
+#portifolio {
+  background-color: #222f40;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+
+}
+
+#portifolio h2 {
+  width: 100%;
+  text-align: center;
+  padding-top: 50px;
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.projetos {
+  position: relative;
+  background-color: #64758C;
+  width: 350px;
+  height: 350px;
+  margin: 5%;
+  border-radius: 10px 10px 0 0;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.projetos:nth-child(2) {
+  background-image: url(imagens/pexels-pixabay-38639.jpg);
+}
+
+.projetos:nth-child(3) {
+  background-image: url(imagens/pexels-negative-space-34601.jpg);
+}
+
+.projetos:nth-child(4) {
+  background-image: url(imagens/pexels-negative-space-34123.jpg);
+}
+
+.projetos:nth-child(5) {
+  background-image: url(imagens/pexels-negative-space-34140.jpg);
+}
+
+.projetos:nth-child(6) {
+  background-image: url(imagens/pexels-tranmautritam-251225.jpg);
+}
+
+.projetos:nth-child(7) {
+  background-image: url(imagens/pexels-tranmautritam-326508.jpg);
+}
+
+.texto-projeto {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  overflow: hidden;
+  text-align: center;
+  transition: .3s ease-in-out;
+}
+
+.texto-projeto h4{
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.texto-projeto p {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.botao-projeto{
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(91, 103, 145);
+  border-radius: 10px;
+  transition: .4s ease-in-out;
+}
+
+.botao-projeto:hover{
+  background-color: var(--azul-escuro-saturado);
+}
+
+.texto-projeto:hover{
+  height: 165px;
+  
 }
 
 /* ----------------- Contato --------------------- */
