@@ -287,9 +287,6 @@ main#sobre {
 
 
 @media (max-width: 600px){
-  #imagem-sobre {
-      
-  }
   #texto-sobre {
       width: 100%;
       
@@ -464,13 +461,13 @@ main#sobre {
   padding: 15px;
   text-decoration: none;
   color: white;
-  background-color: #84B1D9;
+  background-color: #6cc1e9;
   border-radius: 10px;
   transition: .4s ease-in-out;
 }
 
 .botao-projeto:hover {
-  background-color: rgb(91, 103, 145);
+  background-color: #4C388D;
 }
 
 .texto-projeto:hover {
