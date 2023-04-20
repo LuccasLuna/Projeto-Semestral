@@ -235,6 +235,102 @@ nav {
 }
 
 /*---------------- main ------------------------*/
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 20%;
+    
+}
+
+.container-texto-sobre {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+
+#texto-sobre {
+    width: calc(977px - 25%);
+    height: auto;
+    padding: 20px;
+}
+
+#texto-sobre h4 {
+    font-size: 3rem;
+    padding: 20px 0px;
+}
+
+#texto-sobre p {
+    padding-bottom: 25px;
+}
+#texto-sobre a {
+    background-color: #4C388D;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#imagem-sobre {
+    width: calc(977.41px - 50%);
+    height: auto;
+    text-align: center;
+}
+
+
+@media (max-width: 600px){
+    #imagem-sobre {
+        
+    }
+
+    #texto-sobre {
+        width: 100%;
+        
+    }
+}
+
+#container-sobre {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.campos-sobre {
+    width: 300px;
+    height: 350px;
+    background-color: #f0f1f3;
+    border-radius: 20px;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+.campos-sobre p:first-child{
+    text-align: center;
+}
+.campos-sobre i {
+    font-size: 3rem;
+    color: #4C388D;
+    padding: 20px;
+}
+
+.campos-sobre h4 {
+    font-size: 1.2rem;
+}
+
+.campos-sobre p:last-child{
+    padding-top: 10px;
+    text-align: justify;
+
+}
+/*---------------- serviços ------------------------*/
 
 #servicos {
   display: flex;
