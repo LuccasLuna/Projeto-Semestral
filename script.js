@@ -49,7 +49,6 @@ function enviouMensagem(evento) {
     evento.preventDefault();
 
     alert('Mensagem enviada com sucesso!');
-    
     document.getElementById('nome').value='';
     document.getElementById('assunto').value='';
     document.getElementById('email').value='';
