@@ -286,18 +286,13 @@ main#sobre {
 }
 
 
-@media (max-width: 600px){
-  #texto-sobre {
-      width: 100%;
-      
-  }
-}
 
 #container-sobre {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   margin-top: 10px;
+  justify-content: center;
 }
 
 .campos-sobre {
@@ -305,7 +300,7 @@ main#sobre {
   height: 350px;
   background-color: #f0f1f3;
   border-radius: 20px;
-  margin: 10px auto;
+  margin: 10px 10px;
   padding: 20px;
 }
 
@@ -326,6 +321,23 @@ main#sobre {
   padding-top: 10px;
   text-align: justify;
 
+}
+
+@media (max-width: 1090px){
+  .campos-sobre {
+    width: 100%;
+    height: auto;
+  }
+
+  .campos-sobre p{
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px){
+  #imagem-sobre img {
+    width: 100%;
+  }
 }
 
 /*---------------- serviços ------------------------*/
@@ -367,6 +379,7 @@ main#sobre {
   font-size: 1.5rem;
   text-transform: uppercase;
 }
+
 
 
 /*---------------- projetos -------------------*/
