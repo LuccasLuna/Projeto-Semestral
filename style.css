@@ -129,7 +129,7 @@ nav {
   display: flex;
   width: 100%;
   height: 100vh;
-  background-image: url(imagens/vmenor3.jpg);
+  background-image: url(imagens/vmenor4.jpg);
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
@@ -231,6 +231,13 @@ nav {
   100% {
     opacity: 1;
 
+  }
+}
+
+
+@media (max-width: 550px){
+  #texto-banner h1{
+    padding: 0 5%;
   }
 }
 
