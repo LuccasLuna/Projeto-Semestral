@@ -70,9 +70,11 @@ btnTema.addEventListener('click', () => {
     if(localStorage.theme == 'dark') {
         document.body.classList.remove('tema-escuro');
         localStorage.theme = 'light';
+        btnTema.classList.replace('fa-sun', 'fa-moon');
     } else {
         document.body.classList.add('tema-escuro');
         localStorage.theme = 'dark';
+        btnTema.classList.replace('fa-moon', 'fa-sun');
     }
 });
 

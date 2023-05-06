@@ -107,7 +107,7 @@ nav {
   list-style: none;
 }
 
-#login li a {
+#login .login {
   text-decoration: none;
   color: white;
   padding: 17px 15px;
@@ -118,16 +118,26 @@ nav {
   margin: 10px;
 }
 
-#login li a:hover {
+#login .login:hover {
   background-color: transparent;
   border: 1px solid white;
+}
+
+#login .cadastro {
+  color: white;
+  text-decoration: none;
+  transition: .4s ease-in-out;
+}
+
+#login .cadastro:hover {
+  color: rgba(255, 255, 255, 0.644);
 }
 
 #login button {
   border: none;
   background-color: transparent;
   align-items: center;
-  margin-left: 10px;
+  margin-left: 25px;
   cursor: pointer;
 }
 
