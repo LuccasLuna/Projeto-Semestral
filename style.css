@@ -19,16 +19,15 @@ body::-webkit-scrollbar {
 :root {
 
   /*---cores---*/
-
+  
   --azul-escuro: #222f40;
-  --azul-escuro-saturado: #222844;
+  --azul-escuro-saturado: #222344;
   --azul-preto: #161d29;
   --azul-escuro-cinza: #64758C;
   --azul-bebe-saturado: #84B1D9;
   --azul-bebe-dessaturado: #8BBBD9;
   --azul-claro-cinza: #C4CCD9;
   --amarelo-saturado: #F2C879;
-
   /*---fontes---*/
 
   --font-h1: clamp(2rem, 7vw + 0.1rem, 4rem);
@@ -530,13 +529,13 @@ main#sobre {
   padding: 15px;
   text-decoration: none;
   color: white;
-  background-color: #6cc1e9;
+  background-color: #4C388D;
   border-radius: 10px;
   transition: .4s ease-in-out;
 }
 
 .botao-projeto:hover {
-  background-color: #4C388D;
+  background-color: #644fa8;
 }
 
 .texto-projeto:hover {
@@ -608,7 +607,7 @@ section#contato {
 }
 
 .mensagem button {
-  background-color: var(--azul-escuro-cinza);
+  background-color: #4C388D;
   color: white;
   width: 90px;
   height: 50px;
@@ -618,6 +617,7 @@ section#contato {
   text-transform: uppercase;
   font-weight: 500;
   transition: .3s;
+  border: 1px solid transparent;
 }
 
 .mensagem button i {
@@ -625,7 +625,8 @@ section#contato {
 }
 
 .mensagem button:hover {
-  background-color: var(--azul-bebe-saturado);
+  border: 1px solid white;
+  background-color: transparent;
   cursor: pointer;
 
 }
@@ -692,34 +693,22 @@ footer a {
 }
 
 #redes-sociais a i:hover {
-  color: var(--azul-bebe-dessaturado);
+  color: #4C388D;
 }
 
 #container p {
   padding-top: 40px;
 }
 
-/*--------------------------------- tema -------------------------------------*/
-.tema-escuro-sobre{
+/*--------------------------------- tema escuro -------------------------------------*/
+
+.tema-escuro main#sobre {
   background-color: #161d29;
   color: white;
 }
 
-
-.tema-escuro-campo-sobre{
-  background-color: #242c3b;
+.tema-escuro .campos-sobre {
+  background-color: #263144;
 }
 
 
-
-
-.tema-escuro-portifolio{
-  background-color: #161d29;
-}
-.tema-escuro-portifolio h2 {
-  color: white;
-}
-
-.tema-escuro-contato{
-
-}

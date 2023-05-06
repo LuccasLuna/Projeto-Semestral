@@ -67,31 +67,11 @@ function imagem(){
     }
 }
 
-btnTema.addEventListener('click', function(){
-
-    let projetos = document.querySelector('.portifolio');
-    let imgSobre = document.querySelector('.imagem-sobre');
-    let sobre = document.getElementById('sobre');
-    let camposSobre = document.querySelector('.campos-sobre');
+btnTema.addEventListener('click', () => {
     
 
-    if(document.body.classList.contains('tema-escuro')) {
+    document.body.classList.contains('tema-escuro') ? document.body.classList.remove('tema-escuro') : document.body.classList.add('tema-escuro');
 
-        document.body.classList.remove('tema-escuro'); 
-        sobre.classList.remove('tema-escuro-sobre');
-        camposSobre.classList.remove('tema-escuro-campo-sobre');
-        projetos.classList.remove('tema-escuro-portifolio');
-        btnTema.classList.replace('fa-sun','fa-moon');
-        
-    } else {
-
-       document.body.classList.add('tema-escuro'); 
-       sobre.classList.add('tema-escuro-sobre');
-       camposSobre.classList.add('tema-escuro-campo-sobre');
-       projetos.classList.add('tema-escuro-portifolio');
-       btnTema.classList.replace('fa-moon','fa-sun');
-      
-    }
 
 });
 
