@@ -57,6 +57,7 @@ nav {
   color: white;
   text-transform: uppercase;
   transition: .3s ease-in-out;
+  
 }
 
 #container-nav {
@@ -96,6 +97,11 @@ nav {
 
 }
 
+#login{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 #login ul {
   display: flex;
@@ -110,12 +116,30 @@ nav {
   background-color: #4C388D;
   border: 1px solid transparent;
   transition: .4s ease-in-out;
+  margin: 10px;
 }
 
 #login li a:hover {
   background-color: transparent;
   border: 1px solid white;
 }
+
+#login button {
+  border: none;
+  background-color: transparent;
+  align-items: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#btn-tema {
+  width: 20px;
+  height: auto;
+  font-size: 2em;
+  color: white;
+}
+
+
 
 #icone-mobile {
   display: none;
@@ -215,6 +239,7 @@ nav {
   animation: 3s anim-fade ease-out;
 }
 
+
 @keyframes anim-fade {
   0% {
     opacity: 0;
@@ -269,21 +294,21 @@ main#sobre {
 }
 
 
-#texto-sobre {
+.texto-sobre {
   width: calc(977px - 25%);
   height: auto;
   padding: 20px;
 }
 
-#texto-sobre h4 {
+.texto-sobre h4 {
   font-size: 3rem;
   padding-bottom: 20px;
 }
 
-#texto-sobre p {
+.texto-sobre p {
   padding-bottom: 25px;
 }
-#texto-sobre a {
+.texto-sobre a {
   background-color: #4C388D;
   color: white;
   padding: 20px;
@@ -292,7 +317,7 @@ main#sobre {
   cursor: pointer;
 }
 
-#imagem-sobre {
+.campo-imagem-sobre {
   width: calc(977.41px - 50%);
   height: auto;
   text-align: center;
@@ -358,7 +383,7 @@ main#sobre {
 }
 
 @media (max-width: 600px){
-  #imagem-sobre img {
+  .imagem-sobre {
     width: 100%;
   }
 }
@@ -415,7 +440,7 @@ main#sobre {
 
 /*---------------- projetos -------------------*/
 
-#portifolio {
+.portifolio {
   background-color: #f0f1f3;
   display: flex;
   flex-wrap: wrap;
@@ -426,7 +451,7 @@ main#sobre {
 
 }
 
-#portifolio h2 {
+.portifolio h2 {
   width: 100%;
   text-align: center;
   padding-top: 72px;
@@ -533,16 +558,16 @@ section#contato {
   color: #fff;
   font-size: 1.5rem;
   text-transform: uppercase;
+  padding-top: 72px;
+  
 }
 
 #contato p {
   padding-top: 10px;
+  padding-bottom: 15px;
   text-align: center;
 }
 
-section#contato h2 {
-  padding-top: 20px;
-}
 
 .contato-form {
   display: flex;
@@ -672,4 +697,29 @@ footer a {
 
 #container p {
   padding-top: 40px;
+}
+
+/*--------------------------------- tema -------------------------------------*/
+.tema-escuro-sobre{
+  background-color: #161d29;
+  color: white;
+}
+
+
+.tema-escuro-campo-sobre{
+  background-color: #242c3b;
+}
+
+
+
+
+.tema-escuro-portifolio{
+  background-color: #161d29;
+}
+.tema-escuro-portifolio h2 {
+  color: white;
+}
+
+.tema-escuro-contato{
+
 }
