@@ -548,7 +548,8 @@ main#sobre {
 section#contato {
   width: 100%;
   height: auto;
-  background-color: var(--azul-escuro-saturado);
+  /*background-color: var(--azul-escuro-saturado);*/
+  background-color: #1d2535;
   color: white;
 }
 
@@ -702,10 +703,19 @@ footer a {
 
 /*--------------------------------- tema escuro -------------------------------------*/
 
-.tema-escuro main#sobre, {
+.tema-escuro main#sobre{
   background-color: #161d29;
   color: white;
 }
+.tema-escuro #servicos {
+  background-color: #1a2130;
+  color: white;
+}
+.tema-escuro #servicos h2{
+  
+  color: white;
+}
+
 .tema-escuro .portifolio {
   background-color: #161d29;
 } 
@@ -716,3 +726,5 @@ footer a {
 .tema-escuro .campos-sobre {
   background-color: #1d2535;
 }
+
+
