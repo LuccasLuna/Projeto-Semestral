@@ -59,8 +59,6 @@ form.addEventListener('submit', function enviouMensagem(evento) {
 });
 
 function imagem(){
-    let imgSobre = document.querySelector('.imagem-sobre');
-    
     if(document.body.classList.contains('tema-escuro')){
         document.body.classList.remove('tema-escuro'); 
         
@@ -69,10 +67,18 @@ function imagem(){
 
 btnTema.addEventListener('click', () => {
     
-
-    document.body.classList.contains('tema-escuro') ? document.body.classList.remove('tema-escuro') : document.body.classList.add('tema-escuro');
-
-
+    if(localStorage.theme == 'dark') {
+        document.body.classList.remove('tema-escuro');
+        localStorage.theme = 'light';
+    } else {
+        document.body.classList.add('tema-escuro');
+        localStorage.theme = 'dark';
+    }
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    if(localStorage.theme == 'dark') {
+        document.body.classList.add('tema-escuro');
+    }
+});
 

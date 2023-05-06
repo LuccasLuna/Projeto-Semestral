@@ -19,7 +19,7 @@ body::-webkit-scrollbar {
 :root {
 
   /*---cores---*/
-  
+
   --azul-escuro: #222f40;
   --azul-escuro-saturado: #222344;
   --azul-preto: #161d29;
@@ -702,13 +702,17 @@ footer a {
 
 /*--------------------------------- tema escuro -------------------------------------*/
 
-.tema-escuro main#sobre {
+.tema-escuro main#sobre, {
   background-color: #161d29;
+  color: white;
+}
+.tema-escuro .portifolio {
+  background-color: #161d29;
+} 
+.tema-escuro .portifolio h2 {
   color: white;
 }
 
 .tema-escuro .campos-sobre {
-  background-color: #263144;
+  background-color: #1d2535;
 }
-
-
