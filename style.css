@@ -24,17 +24,25 @@ body::-webkit-scrollbar {
   --azul-escuro-saturado: #222344;
   --azul-preto: #161d29;
   --azul-escuro-cinza: #64758C;
-  --azul-bebe-saturado: #84B1D9;
-  --azul-bebe-dessaturado: #8BBBD9;
   --azul-claro-cinza: #C4CCD9;
-  --amarelo-saturado: #F2C879;
+  
+  /*Dark*/
+  --color-dark-20: #b2b2b9;
+  --color-dark-50: #797984;
+  --color-dark-100: #312d37;
+  --color-dark-900: #000;
+  /* Purple */
+  --color-purple-50: #4000ae;
+  --color-purple-100: #5700dabb;
+  --color-purple-200: #4106cd;
+
+
   /*---fontes---*/
 
   --font-h1: clamp(2rem, 7vw + 0.1rem, 4rem);
 }
 
-body,
-html {
+body, html {
   scroll-behavior: smooth;
   transition: width 0.3s, height 0.3s;
   transition-timing-function: ease;
@@ -52,7 +60,6 @@ nav {
   z-index: 2;
   height: auto;
   background-color: #312650;
-  /*background-color: rgb(25, 27, 49);*/
   color: white;
   text-transform: uppercase;
   transition: .3s ease-in-out;
@@ -78,22 +85,14 @@ nav {
   color: white;
   margin: 0 10px;
   padding: 20px 5px;
-  /*border-radius: 5px;
-  transition: .2s ease-in-out;*/
+  
   border-bottom: 3px solid transparent;
 }
 
 #lista-nav a:hover {
-  /*border-bottom: 3px solid rgb(55, 79, 165);*/
-
-
+  
   border-bottom: 3px solid rgb(81, 115, 238);
   background-image: linear-gradient(to top, rgba(48, 70, 148, 0.726) 0%, #00000000 100%);
-
-
-  /*background-image: linear-gradient(to top, rgb(91, 103, 145) 0%, #00000000 100%);*/
-  /*background-color: rgb(91, 103, 145);*/
-
 }
 
 #login{
@@ -240,7 +239,6 @@ nav {
 .botao-banner:hover {
   border: 1px solid white;
   background-color: transparent;
-  /*background-color: #84b1d977;*/
   transition: .3s;
 }
 
@@ -560,6 +558,7 @@ section#contato {
   height: auto;
   /*background-color: var(--azul-escuro-saturado);*/
   background-color: #1d2535;
+  background-color: #161d29;
   color: white;
 }
 
@@ -652,7 +651,7 @@ footer {
   padding: 0 18%;
   padding-top: 40px;
   justify-content: space-between;
-  background-color: var(--azul-preto);
+  background-color: #000;
   color: var(--azul-claro-cinza);
 }
 
@@ -714,11 +713,11 @@ footer a {
 /*--------------------------------- tema escuro -------------------------------------*/
 
 .tema-escuro main#sobre{
-  background-color: #161d29;
+  background-color: #0e0e0e;
   color: white;
 }
 .tema-escuro #servicos {
-  background-color: #1a2130;
+  background-color: #0d1118;
   color: white;
 }
 .tema-escuro #servicos h2{
@@ -727,14 +726,19 @@ footer a {
 }
 
 .tema-escuro .portifolio {
-  background-color: #161d29;
+  background-color: #0e0e0e;
 } 
 .tema-escuro .portifolio h2 {
   color: white;
 }
 
 .tema-escuro .campos-sobre {
-  background-color: #1d2535;
+  background-color: #161d29;
+  
+}
+.tema-escuro .campos-sobre p {
+  color: var(--color-dark-20);
+  
 }
 
 
