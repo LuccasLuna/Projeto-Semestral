@@ -86,7 +86,7 @@ body{
 }
 
 .enviar input {
-    
+    padding-bottom: 10px;
 }
 .enviar button {
     width: 150px;
