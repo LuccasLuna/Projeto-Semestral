@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="trabalhe-conosco.css">
+</head>
+<body>
+    <div id="container">
+        <div class="texto">
+            <h2>Trabalhe Conosco</h2>
+            <p>Faça parte do nosso time de colaboradores</p>
+        </div>
+        <form action="#"  method="post" class="formulario">
+
+            <div class="contato-detalhes">
+                <input type="text" name="nome" id="nome" placeholder="Nome completo" required>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                
+                
+            </div>
+            <div class="area-form">
+                <label for="area">Área de interesse:</label>
+                <select name="area" id="area" form="carform" required>
+                    <option value="FIN">Financeiro</option>
+                    <option value="RH">Recursos Humanos</option>
+                    <option value="TI">Programador</option>
+                    <option value="JURI">Juridico</option>
+                    <option value="OUT">Outros</option>
+
+                </select>
+            </div>
+            <div class="mensagem-form">
+                <textarea name="messagem" id="mensagem" cols="30" rows="15" required minlength="100" maxlength="500"
+                placeholder="Fale brevemente sobre sua experiência profissional"></textarea>
+            </div>
+            <div class="enviar">
+                <label for="arquivos">Envie seu currículo</label>
+                <input type="file" name="arquivos" id="arquivos" placeholder="Envie seu curriculo" required>
+                <button type="submit">Enviar<i class="fa-sharp fa-solid fa-paper-plane"></i></button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        const form = document.querySelector('.formulario');
+        form.addEventListener('submit', function enviouMensagem(evento) {
+            evento.preventDefault();
+
+            alert('Currículo enviado com sucesso. Boa sorte!');
+            
+            window.location.href = "index.html";
+        });
+    </script>
+</body>
+</html>

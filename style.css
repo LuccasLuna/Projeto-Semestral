@@ -63,7 +63,6 @@ nav {
   color: white;
   text-transform: uppercase;
   transition: .3s ease-in-out;
-  
 }
 
 #container-nav {
@@ -140,7 +139,7 @@ nav {
   cursor: pointer;
 }
 
-#btn-tema {
+.btn-tema {
   width: 20px;
   height: auto;
   font-size: 2em;
@@ -278,6 +277,7 @@ nav {
     padding-bottom: 2%
   }
 }
+
 
 /*---------------- main ------------------------*/
 
@@ -663,6 +663,7 @@ footer h4 {
   padding-bottom: 10px;
 }
 
+
 footer a {
   text-decoration: none;
   color: var(--azul-claro-cinza);
@@ -691,6 +692,13 @@ footer a {
   margin: 2%;
 }
 
+#trabalhe-conosco {
+  padding-top: 15px;
+}
+
+#trabalhe-conosco a:hover{
+  color: #4C388D;
+}
 
 #redes-sociais {
   display: flex;

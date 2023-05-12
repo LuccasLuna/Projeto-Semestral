@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>New Creation</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="midiaquery.css">
     <script src="script.js" defer></script>
@@ -32,26 +32,27 @@
     <nav>
         <div id="container-nav">
             <div>
-                <h1>Logo</h1>
+                <img src="imagens/logo.png" alt="logo" height="65px" width="65px">
             </div>
             <div id="lista-nav">
                 <ul>
-                    <li class="lista"><a href="#sobre">Sobre</a></li>
                     <li class="lista"><a href="#servicos">Serviços</a></li>
                     <li class="lista"><a href="#portifolio">Projetos</a></li>
                     <li class="lista"><a href="#contato">Contato</a></li>
+                    <li class="lista"><a href="#sobre">Sobre</a></li>
                 </ul>
             </div>
             <div id="login">
                 <ul>
                     <li><a href="#" class="login">Login</a></li>
-                    <li><a href="#" class="cadastro">Cadastre-se</a></li>
+                    <li><a href="" class="cadastro">Cadastre-se</a></li>
                 </ul>
-                <button ><i id="btn-tema" class="fa-solid fa-moon"></i></i></button>
+                <button ><i class="fa-solid fa-moon btn-tema"></i></button>
             </div>
             
-            <div id="icone-mobile" onclick="clicou()">
-                <button><i id="botao" class="fa-solid fa-bars"></i></button>
+            <div id="icone-mobile" >
+                <button><i id="botao" class="fa-solid fa-bars" onclick="clicou()"></i></button>
+                <i class="fa-solid fa-moon btn-tema tema-mobile"></i>
             </div>
 
         </div>
@@ -59,7 +60,7 @@
             <ul>
                 <li><a class="menu-link" href="#sobre">Sobre</a></li>
                 <li><a class="menu-link" href="#servicos">Serviços</a></li>
-                <li><a class="menu-link" href="#portifolio">Projetos</a></li>
+                <li><a class="menu-link" href=".portifolio">Projetos</a></li>
                 <li><a class="menu-link" href="#contato">Contato</a></li>
                 <li><a class="menu-link" href="#">Login</a></li>
             </ul>
@@ -70,7 +71,7 @@
         <div id="texto-banner" class="line-up">
 
             <div class="div-banner">
-                <h1>Somos a maior empresa de criação e hospedagem de sites do Brasil.</h1>
+                <h1>A maior empresa de criação e hospedagem de sites do Brasil.</h1>
             </div>
             
             <div class="div-banner">
@@ -134,7 +135,7 @@
 
     </section>
 
-    <aside class="portifolio">
+    <aside class="portifolio" id="portifolio">
         
             <h2>Projetos</h2>
             
@@ -228,6 +229,7 @@
                 <li>Horário de Brasilia</li>
                 <li>(Exceto domingo e feriados)</li>
             </ul>
+        
         </div>
 
 
@@ -243,17 +245,21 @@
             <div id="endereco">
 
                 <h4>Endereço</h4>
+
                 <ul>
                     <li>Av. xxxx, 1234 conj 100 andar 10</li>
                     <li>Bairro: xxxxxx São Paulo/SP</li>
                     <li>CEP: 12345-678</li>
                 </ul>
 
+                <h4 id="trabalhe-conosco"><a href="trabalhe-conosco.html" >Trabalhe Conosco</a></h4>
             </div>
 
+            
         </div>
-
+        
         <div id="container">
+            
             <h4>Mídias sociais</h4>
 
             <div id="redes-sociais">
@@ -264,6 +270,7 @@
             </div>
 
             <p>Copyright &copy; 2023</p>
+            
         </div>
 
     </footer>

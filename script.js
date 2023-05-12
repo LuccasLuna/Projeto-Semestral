@@ -2,7 +2,8 @@
 let menuMobile = document.getElementById("menu-mobile");
 let botao = document.getElementById("botao");
 const form = document.querySelector('.contato-form');
-let btnTema = document.getElementById('btn-tema');
+let btnTema = document.querySelector('.btn-tema');
+let temaMobile = document.querySelector('.tema-mobile');
 
 
 
@@ -58,13 +59,6 @@ form.addEventListener('submit', function enviouMensagem(evento) {
     document.getElementById('mensagem').value='';
 });
 
-function imagem(){
-    if(document.body.classList.contains('tema-escuro')){
-        document.body.classList.remove('tema-escuro'); 
-        
-    }
-}
-
 btnTema.addEventListener('click', () => {
     
     if(localStorage.theme == 'dark') {
@@ -78,9 +72,25 @@ btnTema.addEventListener('click', () => {
     }
 });
 
+
+temaMobile.addEventListener('click', () => {
+    
+    if(localStorage.theme == 'dark') {
+        document.body.classList.remove('tema-escuro');
+        localStorage.theme = 'light';
+        temaMobile.classList.replace('fa-sun', 'fa-moon');
+    } else {
+        document.body.classList.add('tema-escuro');
+        localStorage.theme = 'dark';
+        temaMobile.classList.replace('fa-moon', 'fa-sun');
+    }
+});
+
+
 document.addEventListener('DOMContentLoaded', () => {
     if(localStorage.theme == 'dark') {
         document.body.classList.add('tema-escuro');
-    }
+    } 
 });
+
 
