@@ -420,7 +420,7 @@ main#servicos {
   width: 100%;
   height: 100%;
   background-color: #2c0092af;
-  padding: 10%;
+  padding: 7% ;
   display: flex;
   flex-direction: column;
   color: #230270;
@@ -447,6 +447,11 @@ main#servicos {
   background-color: white;
   padding: 3%;
   margin: 3% 5px;
+  border-radius: 5px;
+}
+
+.planos:hover{
+  box-shadow: 5px 3px 5px rgba(63, 24, 100, 0.452);
 }
 
 .precos h3{
@@ -466,6 +471,12 @@ main#servicos {
   text-align: center;
 }
 
+.precos hr{
+  background-color: #b496fa;
+  height: 1px; 
+  border: none;
+}
+
 .planos .botao-planos {
   text-align: center;
   padding-bottom: 10px;
@@ -481,6 +492,7 @@ main#servicos {
   transition: .3s ease-in-out;
   border-radius: 5px;
   margin-top: 20px;
+  font-weight: bold;
 }
 
 .planos button i {
@@ -488,7 +500,7 @@ main#servicos {
 }
 
 .planos button:hover{
-  background-color: #4206cdd5;
+  background-color: #7445e0;
   cursor: pointer;
 }
 
