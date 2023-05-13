@@ -313,6 +313,7 @@ main#sobre {
 }
 
 .texto-sobre p {
+  
   padding-bottom: 25px;
 }
 .texto-sobre a {
@@ -342,7 +343,7 @@ main#sobre {
 
 .campos-sobre {
   width: 300px;
-  height: 350px;
+  height: 300px;
   background-color: #f0f1f3;
   border-radius: 20px;
   margin: 10px 10px;
@@ -359,12 +360,16 @@ main#sobre {
 }
 
 .campos-sobre h4 {
+  font-size: 1.5rem;
+}
+
+.campos-sobre p{
   font-size: 1.2rem;
 }
 
 .campos-sobre p:last-child{
   padding-top: 10px;
-  text-align: justify;
+  text-align: left;
 
 }
 
@@ -404,44 +409,6 @@ main#sobre {
 
 /*---------------- serviços ------------------------*/
 
-#servicos {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  flex-flow: wrap;
-  background-color: #fff;
-  padding-bottom: 50px;
-}
-
-.campos-servicos {
-
-  width: 40%;
-  height: auto;
-  margin: 0 20px;
-  margin-top: 50px;
-}
-
-.campos-servicos p {
-  text-align: justify;
-  font-size: 1em;
-  padding-bottom: 20px;
-}
-
-.campos-servicos h3 {
-  padding-bottom: 40px;
-  text-align: center;
-}
-
-#servicos>h2 {
-  width: 100%;
-  text-align: center;
-  padding-top: 72px;
-  padding-bottom: 50px;
-  color: black;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-}
 
 
 
