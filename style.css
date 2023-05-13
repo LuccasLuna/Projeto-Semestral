@@ -455,7 +455,11 @@ main#servicos {
 .precos h4 {
   text-align: center;
   font-size: 1.8em;
-  padding: 20px 0;
+  padding-top: 20px;
+}
+
+.precos p {
+  text-align: center;
 }
 
 .planos .botao-planos {
@@ -472,6 +476,7 @@ main#servicos {
   color: white;
   transition: .3s ease-in-out;
   border-radius: 5px;
+  margin-top: 20px;
 }
 
 .planos button i {
@@ -497,15 +502,15 @@ main#servicos {
 }
 
 .i-vermelho{
-  color: red;
+  color: #fc5185;
 }
 
 .i-verde{
-  color: green;
+  color: #00b090;
 }
 
 .i-amarelo{
-  color: rgb(226, 192, 0);
+  color: #ffcd35;
 }
 
 
