@@ -17,7 +17,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
     <!-----------------TAGS META------------------------>
@@ -37,8 +37,8 @@
             <div id="lista-nav">
                 <ul>
                     <li class="lista"><a href="#banner">Home</a></li>
-                    <li class="lista"><a href="#sobre">Empresa</a></li>
-                    <li class="lista"><a href="#servicos">Serviços</a></li>
+                    <li class="lista"><a href="#">Empresa</a></li>
+                    <li class="lista"><a href="#servicos">servicos</a></li>
                     <li class="lista"><a href="#contato">Fale Conosco</a></li>
                     <li class="lista"><a href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
                 </ul>
@@ -48,10 +48,10 @@
                     <li><a href="#" class="login">Login</a></li>
                     <li><a href="" class="cadastro">Cadastre-se</a></li>
                 </ul>
-                <button ><i class="fa-solid fa-moon btn-tema"></i></button>
+                <button><i class="fa-solid fa-moon btn-tema"></i></button>
             </div>
-            
-            <div id="icone-mobile" >
+
+            <div id="icone-mobile">
                 <button><i id="botao" class="fa-solid fa-bars" onclick="clicou()"></i></button>
                 <i class="fa-solid fa-moon btn-tema tema-mobile"></i>
             </div>
@@ -59,11 +59,11 @@
         </div>
         <div id="menu-mobile" onclick="clicouLink()">
             <ul>
-                <li class="lista"><a href="#banner">Home</a></li>
-                <li><a class="menu-link" href="#sobre">Empresa</a></li>
-                <li><a class="menu-link" href="#servicos">Serviços</a></li>
-                <li><a class="menu-link" href="#contato">Fale </a></li>
-                <li class="lista"><a href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
+                <li><a class="menu-link" href="#banner">Home</a></li>
+                <li><a class="menu-link" href="#">Empresa</a></li>
+                <li><a class="menu-link" href="#servicos">servicos</a></li>
+                <li><a class="menu-link" href="#contato">Fale Conosco</a></li>
+                <li><a class="menu-link" href="trabalhe-conosco.html">Trabalhe Conosco </a></li>
                 <li><a class="menu-link" href="#">Login</a></li>
             </ul>
         </div>
@@ -75,39 +75,42 @@
             <div class="div-banner">
                 <h1>A maior empresa de criação e hospedagem de sites do Brasil.</h1>
             </div>
-            
+
             <div class="div-banner">
-                <a href="#sobre" class="botao-banner">Saiba mais<i class="fa-sharp fa-solid fa-arrow-turn-down"></i></a>
+                <a href="#servicos" class="botao-banner">Saiba mais<i
+                        class="fa-sharp fa-solid fa-arrow-turn-down"></i></a>
             </div>
 
         </div>
 
     </header>
 
-    <main id="sobre">
-        <div class="container-texto-sobre" >
-            <div class="texto-sobre">
+    <main id="servicos">
+        <div class="container-texto-servicos">
+            <div class="texto-servicos">
                 <h4>Crie e hospede seu site agora.</h4>
-                <p>Crie e hospede o site da sua empresa agora e amplie seus negócios na web. Com nossa plataforma fácil de usar, você pode criar um site personalizado e escolher um plano de hospedagem adequado às suas necessidades. Não perca tempo, comece agora e destaque-se na internet. </p>
-                <a href="#">Saiba mais</a>
+                <p>Crie e hospede o site da sua empresa agora e amplie seus negócios na web. Com nossa plataforma fácil
+                    de usar, você pode criar um site personalizado e escolher um plano de hospedagem adequado às suas
+                    necessidades. Não perca tempo, comece agora e destaque-se na internet. </p>
+                <a href="#hospedagem-site">Saiba mais</a>
             </div>
-            <div class="campo-imagem-sobre">
-                <img class="imagem-sobre" src="imagens/img-sobre.png" alt="imagem-fundo-sobre">
+            <div class="campo-imagem-servicos">
+                <img class="imagem-servicos" src="imagens/img-servicos.png" alt="imagem-fundo-servicos">
             </div>
         </div>
 
-        <div id="container-sobre">
-            <div class="campos-sobre">
+        <div id="container-servicos">
+            <div class="campos-servicos">
                 <p><i class="fa-solid fa-hand-holding-heart"></i></p>
                 <h4>Custo-beneficio</h4>
                 <p>Qualidade excepcional com preço que cabe no bolso.</p>
             </div>
-            <div class="campos-sobre">
+            <div class="campos-servicos">
                 <p><i class="fa-solid fa-shield"></i></p>
                 <h4>Segurança</h4>
                 <p>Segurança garantida. Proteção total para sua tranquilidade.</p>
             </div>
-            <div class="campos-sobre">
+            <div class="campos-servicos">
                 <p><i class="fa-solid fa-rocket"></i></p>
                 <h4>Rapidez</h4>
                 <p>Entrega rápida: qualidade e eficiência em tempo recorde.</p>
@@ -115,54 +118,132 @@
         </div>
     </main>
 
-   
+    <section id="criacao-site">
+
+    </section>
+
+    <section id="hospedagem-site">
+            <div class="titulo-hospedagem">
+                <h2>Planos de hospedagem</h2>
+            </div>
+
+            <div class="container-planos">
+                <div class="planos">
+                    <div class="precos">
+                        <h3>Hospedagem lv 1</h3>
+                        <p>Recomendado para sites pessoais e blogs com pouco acesso.</p>
+                        <h4>R$ 10,00/mês</h4>
+                        <div class="botao-planos">
+                            <button>Adiquira agora <i class="fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="recursos">
+                        <h3>Comparação dos principais recursos</h3>
+                        <p><i class="fa-solid fa-check i-amarelo"></i>1 Site</p>
+                        <p><i class="fa-solid fa-check i-amarelo"></i>100GB de armazenamento</p>
+                        <p><i class="fa-solid fa-check i-amarelo"></i>100 GB de Largura de banda</p>
+                        <p><i class="fa-solid fa-xmark i-vermelho"></i></i>Domínio grátis</p>
+                        <p><i class="fa-solid fa-check i-verde"></i>SSL ilimitado grátis</p>
+                        <p><i class="fa-solid fa-check i-amarelo"></i>Backups semanais</p>
+                        <p><i class="fa-solid fa-check i-verde"></i>Suporte online 24h</p>
+                    </div>
+                </div>
+                <div class="planos">
+                    <div class="precos">
+                        <h3>Hospedagem lv 2</h3>
+                        <p>Recomendado para empresas e lojas virtuais de pequeno porte.</p>
+                        <h4>R$ 15,00/mês</h4>
+                        <div class="botao-planos">
+                            <button>Adiquira agora<i class="fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="recursos">
+                        <h3>Comparação dos principais recursos</h3>
+                        <p><i class="fa-solid fa-check i-amarelo"></i>10 Sites</p>
+                        <p><i class="fa-solid fa-check i-verde"></i>200GB de armazenamento</p>
+                        <p><i class="fa-solid fa-check i-verde"></i>200 GB de Largura de banda</p>
+                        <p><i class="fa-solid fa-check i-verde"></i>Domínio grátis</p>
+                        <p><i class="fa-solid fa-check i-verde"></i>SSL ilimitado grátis</p>
+                        <p><i class="fa-solid fa-check i-amarelo"></i>Backups semanais</p>
+                        <p><i class="fa-solid fa-check i-verde"></i>Suporte online 24h</p>
+                    </div>
+                </div>
+                <div class="planos">
+                    <div class="precos">
+                        <h3>Hospedagem lv 3</h3>
+                        <p>Recomendado para empresas e lojas virtuais de grande porte.</p>
+                        <h4>R$ 25,00/mês</h4>
+                        <div class="botao-planos">
+                            <button>Adiquira agora<i class="fa-solid fa-cart-shopping"></i></button>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="recursos">
+                        <h3>Comparação dos principais recursos</h3>
+                        <p><i class="fa-solid fa-check i-verde"></i>100 Sites</p>
+                        <p><i class="fa-solid fa-check i-verde"></i>400 GB de armazenamento</p>
+                        <p><i class="fa-solid fa-check i-verde"></i>Banda larga ilimitada</p>
+                        <p><i class="fa-solid fa-check i-verde"></i>Domínio grátis</p>
+                        <p><i class="fa-solid fa-check i-verde"></i>SSL ilimitado grátis</p>
+                        <p><i class="fa-solid fa-check i-verde"></i>Backups diário</p>
+                        <p><i class="fa-solid fa-check i-verde"></i>Suporte online 24h</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    
+
+
     <aside class="portifolio" id="portifolio">
-        
-            <h2>Projetos</h2>
-            
-                <div class="projetos">
-                    <div class="texto-projeto">
-                        <h4 class="titulo-projeto">Lorem, ipsum dolor.</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, sunt.</p>
-                        <a class="botao-projeto" href="#">Conheça mais</a>
-                    </div>
-                </div>
-                <div class="projetos">
-                    <div class="texto-projeto">
-                        <h4 class="titulo-projeto">Lorem, ipsum dolor.</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, sunt.</p>
-                        <a class="botao-projeto" href="#">Conheça mais</a>
-                    </div>
-                </div>
-                <div class="projetos">
-                    <div class="texto-projeto">
-                        <h4 class="titulo-projeto">Lorem, ipsum dolor.</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, sunt.</p>
-                        <a class="botao-projeto" href="#">Conheça mais</a>
-                    </div>
-                </div>
-                <div class="projetos">
-                    <div class="texto-projeto">
-                        <h4 class="titulo-projeto">Lorem, ipsum dolor.</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, sunt.</p>
-                        <a class="botao-projeto" href="#">Conheça mais</a>
-                    </div>
-                </div>
-                <div class="projetos">
-                    <div class="texto-projeto">
-                        <h4 class="titulo-projeto">Lorem, ipsum dolor.</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, sunt.</p>
-                        <a class="botao-projeto" href="#">Conheça mais</a>
-                    </div>
-                </div>
-                <div class="projetos">
-                    <div class="texto-projeto">
-                        <h4 class="titulo-projeto">Lorem, ipsum dolor.</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, sunt.</p>
-                        <a class="botao-projeto" href="#">Conheça mais</a>
-                    </div>
-                </div>
-            
+
+        <h2>Projetos</h2>
+
+        <div class="projetos">
+            <div class="texto-projeto">
+                <h4 class="titulo-projeto">Lorem, ipsum dolor.</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, sunt.</p>
+                <a class="botao-projeto" href="#">Conheça mais</a>
+            </div>
+        </div>
+        <div class="projetos">
+            <div class="texto-projeto">
+                <h4 class="titulo-projeto">Lorem, ipsum dolor.</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, sunt.</p>
+                <a class="botao-projeto" href="#">Conheça mais</a>
+            </div>
+        </div>
+        <div class="projetos">
+            <div class="texto-projeto">
+                <h4 class="titulo-projeto">Lorem, ipsum dolor.</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, sunt.</p>
+                <a class="botao-projeto" href="#">Conheça mais</a>
+            </div>
+        </div>
+        <div class="projetos">
+            <div class="texto-projeto">
+                <h4 class="titulo-projeto">Lorem, ipsum dolor.</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, sunt.</p>
+                <a class="botao-projeto" href="#">Conheça mais</a>
+            </div>
+        </div>
+        <div class="projetos">
+            <div class="texto-projeto">
+                <h4 class="titulo-projeto">Lorem, ipsum dolor.</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, sunt.</p>
+                <a class="botao-projeto" href="#">Conheça mais</a>
+            </div>
+        </div>
+        <div class="projetos">
+            <div class="texto-projeto">
+                <h4 class="titulo-projeto">Lorem, ipsum dolor.</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, sunt.</p>
+                <a class="botao-projeto" href="#">Conheça mais</a>
+            </div>
+        </div>
+
     </aside>
 
 
@@ -192,7 +273,7 @@
 
     </section>
 
-    
+
 
     <footer>
 
@@ -210,7 +291,7 @@
                 <li>Horário de Brasilia</li>
                 <li>(Exceto domingo e feriados)</li>
             </ul>
-        
+
         </div>
 
 
@@ -233,14 +314,14 @@
                     <li>CEP: 12345-678</li>
                 </ul>
 
-                <h4 id="trabalhe-conosco"><a href="trabalhe-conosco.html" >Trabalhe Conosco</a></h4>
+                <h4 id="trabalhe-conosco"><a href="trabalhe-conosco.html">Trabalhe Conosco</a></h4>
             </div>
 
-            
+
         </div>
-        
+
         <div id="container">
-            
+
             <h4>Mídias sociais</h4>
 
             <div id="redes-sociais">
@@ -251,7 +332,7 @@
             </div>
 
             <p>Copyright &copy; 2023</p>
-            
+
         </div>
 
     </footer>
