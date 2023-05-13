@@ -228,7 +228,7 @@ nav {
   text-decoration: none;
   text-transform: uppercase;
   transition: .7s;
-  border-radius: 10px;
+  border-radius: 5px;
   border: 1px solid transparent;
 }
 
@@ -322,9 +322,11 @@ main#servicos {
   background-color: #4C388D;
   color: white;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 5px;
   text-decoration: none;
   cursor: pointer;
+  border: 2px solid transparent;
+  transition: .5s ease-in-out;
 }
 
 .campo-imagem-servicos {
@@ -334,7 +336,10 @@ main#servicos {
 }
 
 .texto-servicos a:hover {
-  background-color: #4c388de1;
+  background-color: transparent;
+  border: 2px solid #4C388D;
+  color: #4C388D;
+  font-weight: bold;
 }
 
 
@@ -413,6 +418,65 @@ main#servicos {
     padding-top: 72px;
   }
 }
+/*---------------- servicos criaçao de sites ------------------------*/
+#criacao-site {
+  width: 100%;
+  height: auto;
+  background: url("imagens/wave.svg") no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.texto-criacao {
+  padding: 100px 15%;
+}
+
+.texto-criacao h2 {
+  font-size: 3em;
+  color: #4c21af;
+  padding-bottom: 10px;
+}
+
+.botao-criacao button {
+  border: none;
+  width: 200px;
+  height: 50px;
+  margin-top: 10px;
+  background-color: #4c21af;
+  border-radius: 5px;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 2px solid #4c21af;
+  transition: .5s ease-in-out;
+  font-weight: bold;
+}
+
+.botao-criacao button i {
+  padding-left: 10px;
+}
+
+.botao-criacao button:hover {
+  border: 2px solid #4c21af;
+  background-color: transparent;
+  color: #4c21af;
+}
+
+.recursos-criacao {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 2%;
+}
+
+.vantagens-criacao {
+  margin-top: 2%;
+  width: 750px;
+  height: 400px;
+  background-color: white;
+  border-radius: 10px;
+  border: 3px solid #4c21af;
+}
 
 /*---------------- servicos hospedagem ------------------------*/
 
@@ -420,7 +484,8 @@ main#servicos {
   width: 100%;
   height: 100%;
   background-color: #2c0092af;
-  padding: 75px 7% ;
+  background-color: #4c21af;
+  padding: 75px 7%;
   display: flex;
   flex-direction: column;
   color: #230270;
@@ -428,7 +493,9 @@ main#servicos {
 
 .titulo-hospedagem{
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .titulo-hospedagem h2 {
@@ -436,6 +503,12 @@ main#servicos {
   color: white;
   text-transform: uppercase;
   padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.titulo-hospedagem p{
+  color: white;
+  text-align: center;
 }
 .container-planos {
   display: flex;
@@ -452,7 +525,7 @@ main#servicos {
 }
 
 .planos:hover{
-  box-shadow: 5px 3px 5px rgba(63, 24, 100, 0.452);
+  box-shadow: 5px 3px 5px rgba(49, 17, 80, 0.623);
 }
 
 .precos h3{
