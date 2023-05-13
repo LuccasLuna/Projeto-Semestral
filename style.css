@@ -333,6 +333,10 @@ main#servicos {
   text-align: center;
 }
 
+.texto-servicos a:hover {
+  background-color: #4c388de1;
+}
+
 
 
 #container-servicos {
@@ -485,7 +489,7 @@ main#servicos {
 
 .planos button:hover{
   background-color: #4206cdd5;
-  
+  cursor: pointer;
 }
 
 
