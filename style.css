@@ -510,7 +510,12 @@ main#servicos {
 
 .img-carousel h4 {
   font-size: 2em;
+  padding: 0 10px;
   padding-top: 25px;
+}
+
+.img-carousel p {
+  padding: 0 10px;
 }
 
 .img-carousel img{
@@ -542,6 +547,10 @@ main#servicos {
     margin-top: 1%;
     width: 50%;
   }
+
+  .img-carousel h4 {
+    font-size: 1.8em;
+  }
 }
 
 
@@ -554,6 +563,10 @@ main#servicos {
     margin-top: 1%;
     width: 60%;
   }
+
+  .img-carousel h4 {
+    font-size: 1.6em;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -564,6 +577,9 @@ main#servicos {
   .vantagens-criacao {
     margin-top: 1%;
     width: 70%;
+  }
+  .img-carousel h4 {
+    font-size: 1.4em;
   }
 }
 
@@ -576,6 +592,10 @@ main#servicos {
     margin-top: .5%;
     width: 75%;
   }
+
+  .img-carousel h4 {
+    font-size: 1.4em;
+  }
 }
 
 @media (max-width: 400px) {
@@ -583,6 +603,7 @@ main#servicos {
     margin-top: .5%;
     width: 85%;
   }
+
 }
 
 
@@ -758,10 +779,17 @@ main#servicos {
   width: 100%;
   text-align: center;
   padding-top: 72px;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
   color: white;
   font-size: 2em;
   text-transform: uppercase;
+}
+.portifolio > p{
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+  padding-bottom: 50px;
 }
 
 .projetos {
@@ -777,28 +805,30 @@ main#servicos {
   overflow: hidden;
 }
 
-.projetos:nth-child(2) {
-  background-image: url(imagens/pexels-pixabay-38639.jpg);
-}
+
 
 .projetos:nth-child(3) {
-  background-image: url(imagens/pexels-negative-space-34601.jpg);
+  background-image: url(imagens/logo-empresas/intel.jpg);
 }
 
 .projetos:nth-child(4) {
-  background-image: url(imagens/pexels-negative-space-34123.jpg);
+  background-image: url(imagens/logo-empresas/burgerking.jpg);
 }
 
 .projetos:nth-child(5) {
-  background-image: url(imagens/pexels-negative-space-34140.jpg);
+  background-image: url(imagens/logo-empresas/nike.png);
 }
 
 .projetos:nth-child(6) {
-  background-image: url(imagens/pexels-tranmautritam-251225.jpg);
+  background-image: url(imagens/logo-empresas/netflix.png);
 }
 
 .projetos:nth-child(7) {
-  background-image: url(imagens/pexels-tranmautritam-326508.jpg);
+  background-image: url(imagens/logo-empresas/volkswagen.png);
+}
+
+.projetos:nth-child(8) {
+  background-image: url(imagens/logo-empresas/loggi.png);
 }
 
 .texto-projeto {
@@ -817,13 +847,13 @@ main#servicos {
 .texto-projeto h4 {
   text-align: center;
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
   font-size: 1.2rem;
   font-weight: 800;
 }
 
 .texto-projeto p {
-  text-align: justify;
+  text-align: center;
   padding: 0 36px 20px 36px;
 }
 
@@ -841,7 +871,7 @@ main#servicos {
 }
 
 .texto-projeto:hover {
-  height: 165px;
+  height: 120px;
 
 }
 
