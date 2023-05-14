@@ -184,12 +184,13 @@ nav {
 
 }
 
-#texto-banner h1 span{
+#texto-banner h1 span {
   color: #000;
   text-transform: uppercase;
   font-weight: bolder;
   text-shadow: 5px 5px 0px transparent;
 }
+
 #texto-banner h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
@@ -303,7 +304,6 @@ main#servicos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
 }
 
 .texto-servicos {
@@ -365,9 +365,6 @@ main#servicos {
   padding: 20px;
 }
 
-.campos-servicos p:first-child {
-  text-align: center;
-}
 
 .campos-servicos i {
   font-size: 3rem;
@@ -381,13 +378,12 @@ main#servicos {
 }
 
 .campos-servicos p {
+  text-align: center;
   font-size: 1.2rem;
 }
 
 .campos-servicos p:last-child {
   padding-top: 10px;
-  text-align: left;
-
 }
 
 @media (max-width: 1090px) {
@@ -423,6 +419,7 @@ main#servicos {
     padding-top: 72px;
   }
 }
+
 /*---------------- servicos criaçao de sites ------------------------*/
 #criacao-site {
   width: 100%;
@@ -475,19 +472,19 @@ main#servicos {
 
 .vantagens-criacao {
   margin-top: 2%;
-  width: 50%;
+  width: 40%;
   height: 400px;
   background-color: white;
   border-radius: 10px;
   border: 3px solid #4c21af;
 }
 
-#container-carrosel{
+#container-carousel {
   height: 100%;
   width: 100%;
 }
 
-#carousel{
+#carousel {
   height: 100%;
   width: 100%;
   background-color: #ccc;
@@ -496,23 +493,37 @@ main#servicos {
   border-radius: 5px;
 }
 
-.carousel-item{
+.carousel-item {
   width: 100%;
   height: 100%;
   position: absolute;
   transition: .5s;
-  
-}
-.carousel-item div{
-  height: 100%;
-  width: 100%;
+
 }
 
-.div-botao-carrosel {
+.img-carousel {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+}
+
+.img-carousel h4 {
+  font-size: 2em;
+  padding-top: 25px;
+}
+
+.img-carousel img{
+  width: 100%;
+  height: 70%;
+}
+
+.div-botao-carousel {
   display: flex;
   justify-content: center;
 }
-.botao-carrosel {
+
+.botao-carousel {
   background-color: transparent;
   color: white;
   border: 2px solid white;
@@ -522,27 +533,52 @@ main#servicos {
   cursor: pointer;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1500px) {
   .texto-criacao h2 {
     font-size: 2.5em;
   }
+
+  .vantagens-criacao {
+    margin-top: 1%;
+    width: 50%;
+  }
+}
+
+
+@media (max-width: 1300px) {
+  .texto-criacao h2 {
+    font-size: 2.5em;
+  }
+
+  .vantagens-criacao {
+    margin-top: 1%;
+    width: 60%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .texto-criacao h2 {
+    font-size: 2.5em;
+  }
+
   .vantagens-criacao {
     margin-top: 1%;
     width: 70%;
   }
 }
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
   .texto-criacao h2 {
     font-size: 2em;
   }
+
   .vantagens-criacao {
     margin-top: .5%;
     width: 75%;
   }
 }
 
-@media (max-width: 400px){
+@media (max-width: 400px) {
   .vantagens-criacao {
     margin-top: .5%;
     width: 85%;
@@ -556,14 +592,14 @@ main#servicos {
   width: 100%;
   height: 100%;
   background-color: #4c21af;
-  background-image: linear-gradient(180deg, #4c21af  0%, #f680843f 100%);
+  background-image: linear-gradient(180deg, #4c21af 0%, #f680843f 100%);
   padding: 75px 7%;
   display: flex;
   flex-direction: column;
   color: #230270;
 }
 
-.titulo-hospedagem{
+.titulo-hospedagem {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -578,15 +614,17 @@ main#servicos {
   padding-top: 15px;
 }
 
-.titulo-hospedagem p{
+.titulo-hospedagem p {
   color: white;
   text-align: center;
 }
+
 .container-planos {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
 .planos {
   width: 500px;
   height: auto;
@@ -596,11 +634,11 @@ main#servicos {
   border-radius: 5px;
 }
 
-.planos:hover{
+.planos:hover {
   box-shadow: 5px 3px 5px rgba(49, 17, 80, 0.623);
 }
 
-.precos h3{
+.precos h3 {
   text-align: center;
   font-size: 1.5em;
   padding-bottom: 15px;
@@ -617,9 +655,9 @@ main#servicos {
   text-align: center;
 }
 
-.precos hr{
+.precos hr {
   background-color: #b496fa;
-  height: 1px; 
+  height: 1px;
   border: none;
 }
 
@@ -645,7 +683,7 @@ main#servicos {
   padding-left: 10px;
 }
 
-.planos button:hover{
+.planos button:hover {
   background-color: #7445e0;
   cursor: pointer;
 }
@@ -659,37 +697,41 @@ main#servicos {
   padding-right: 10px;
 }
 
-.fa-xmark{
+.fa-xmark {
   font-size: 1.2em;
 }
 
-.i-vermelho{
+.i-vermelho {
   color: #fc5185;
 }
 
-.i-verde{
+.i-verde {
   color: #00b090;
 }
 
-.i-amarelo{
+.i-amarelo {
   color: #ffcd35;
 }
 
-@media (max-width: 450px){
+@media (max-width: 450px) {
   .titulo-hospedagem h2 {
     font-size: 1.5em;
   }
-  .precos h3{
+
+  .precos h3 {
     font-size: 1.2em;
   }
+
   .recursos h3 {
     font-size: 1.1em;
   }
 }
-@media (max-width: 345px){
+
+@media (max-width: 345px) {
   .titulo-hospedagem h2 {
     font-size: 1.3em;
   }
+
   .titulo-hospedagem p {
     padding-bottom: 10px;
   }
