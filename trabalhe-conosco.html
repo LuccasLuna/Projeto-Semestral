@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Trabalhe conosco</title>
     <link rel="stylesheet" href="trabalhe-conosco.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div id="container">
@@ -16,9 +19,10 @@
         <form action="#"  method="post" class="formulario">
 
             <div class="contato-detalhes">
-                <input type="text" name="nome" id="nome" placeholder="Nome completo" required>
-                <input type="email" name="email" id="email" placeholder="Email" required>
-                
+                <input type="text" name="nome" id="nome" placeholder="Nome Completo" required maxlength="30">
+                <input type="email" name="email" id="email" placeholder="Email" required maxlength="50">
+                <input type="tel" name="telefone" id="telefone" placeholder="Telefone: 11912345678" required maxlength="13">
+                <input type="text" name="endereco" id="endereco" placeholder="Endereço" required maxlength="70">
                 
             </div>
             <div class="area-form">
@@ -38,21 +42,37 @@
             </div>
             <div class="enviar">
                 <label for="arquivos">Envie seu currículo</label>
-                <input type="file" name="arquivos" id="arquivos" placeholder="Envie seu curriculo" required>
-                <button type="submit">Enviar<i class="fa-sharp fa-solid fa-paper-plane"></i></button>
+                <input type="file" name="arquivos" id="arquivos" required>
+                <button type="submit">Enviar <i class="fa-sharp fa-solid fa-paper-plane"></i></button>
+                <a href="index.html">Voltar</a>
             </div>
         </form>
     </div>
 
     <script>
+       
+
         const form = document.querySelector('.formulario');
         form.addEventListener('submit', function enviouMensagem(evento) {
             evento.preventDefault();
-
-            alert('Currículo enviado com sucesso. Boa sorte!');
+            const telefoneForm = document.getElementById('telefone');
+            const numeroTel = telefoneForm.value;
+            const verificaNumero = (numero) =>{
+                const inputTel = numeroTel;
+                if(isNaN (numero)){
+                    telefoneForm.value = '';
+                    telefoneForm.placeholder = 'Digite apenas números *';
+                    alert('Digite o número corretamente');
+                } else {
+                    alert('Currículo enviado com sucesso. Boa sorte!');
             
-            window.location.href = "index.html";
+                    window.location.href = "index.html"; 
+                }
+            }
+            verificaNumero(numeroTel);  
         });
+
+
     </script>
 </body>
 </html>

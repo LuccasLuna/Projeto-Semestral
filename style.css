@@ -69,7 +69,7 @@ nav {
 #container-nav {
   height: 70px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 0 10%;
 }
@@ -306,7 +306,6 @@ main#servicos {
 
 }
 
-
 .texto-servicos {
   width: calc(977px - 25%);
   height: auto;
@@ -377,6 +376,7 @@ main#servicos {
 }
 
 .campos-servicos h4 {
+  text-align: center;
   font-size: 1.5rem;
 }
 
@@ -469,8 +469,7 @@ main#servicos {
 
 .recursos-criacao {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   padding: 0 2%;
 }
 
@@ -482,6 +481,74 @@ main#servicos {
   border-radius: 10px;
   border: 3px solid #4c21af;
 }
+
+#container-carrosel{
+  height: 100%;
+  width: 100%;
+}
+
+#carousel{
+  height: 100%;
+  width: 100%;
+  background-color: #ccc;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.carousel-item{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: .5s;
+  
+}
+.carousel-item div{
+  height: 100%;
+  width: 100%;
+}
+
+.div-botao-carrosel {
+  display: flex;
+  justify-content: center;
+}
+.botao-carrosel {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px){
+  .texto-criacao h2 {
+    font-size: 2.5em;
+  }
+  .vantagens-criacao {
+    margin-top: 1%;
+    width: 70%;
+  }
+}
+
+@media (max-width: 600px){
+  .texto-criacao h2 {
+    font-size: 2em;
+  }
+  .vantagens-criacao {
+    margin-top: .5%;
+    width: 75%;
+  }
+}
+
+@media (max-width: 400px){
+  .vantagens-criacao {
+    margin-top: .5%;
+    width: 85%;
+  }
+}
+
 
 /*---------------- servicos hospedagem ------------------------*/
 
