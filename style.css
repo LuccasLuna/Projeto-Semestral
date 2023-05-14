@@ -741,6 +741,10 @@ main#servicos {
 
 .portifolio {
   background-color: #f0f1f3;
+  background-image: url(imagens/imagemfundo-projetos-2.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -755,8 +759,8 @@ main#servicos {
   text-align: center;
   padding-top: 72px;
   padding-bottom: 50px;
-  color: black;
-  font-size: 1.5rem;
+  color: white;
+  font-size: 2em;
   text-transform: uppercase;
 }
 
@@ -769,7 +773,8 @@ main#servicos {
   background-size: cover;
   background-position: center;
   border-radius: 15px 15px 20px 20px;
-
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .projetos:nth-child(2) {
@@ -807,8 +812,6 @@ main#servicos {
   overflow: hidden;
   text-align: center;
   transition: .3s ease-in-out;
-  border-radius: 0px 0px 15px 15px;
-
 }
 
 .texto-projeto h4 {
@@ -822,7 +825,6 @@ main#servicos {
 .texto-projeto p {
   text-align: justify;
   padding: 0 36px 20px 36px;
-
 }
 
 .botao-projeto {
@@ -830,7 +832,7 @@ main#servicos {
   text-decoration: none;
   color: white;
   background-color: #4C388D;
-  border-radius: 10px;
+  border-radius: 5px;
   transition: .4s ease-in-out;
 }
 
@@ -848,9 +850,11 @@ main#servicos {
 section#contato {
   width: 100%;
   height: auto;
-  background-color: #1d2535;
-  background-color: #161d29;
-  background-color: #7537A6;
+  background-color: #f0f1f3;
+  background-image: url(imagens/imagemfundo-contato-2.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
   color: white;
 }
 

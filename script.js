@@ -47,6 +47,7 @@ function clicouLink(){
     else
         botao.classList.replace('fa-xmark', 'fa-bars');
 }
+
  form.addEventListener('submit', function enviouMensagem(evento) {
     evento.preventDefault();
 
@@ -57,39 +58,31 @@ function clicouLink(){
     document.getElementById('mensagem').value='';
 });
 
-btnTema.addEventListener('click', () => {
-    
+const tema = () => {
+
     if(localStorage.theme == 'dark') {
         document.body.classList.remove('tema-escuro');
         localStorage.theme = 'light';
         btnTema.classList.replace('fa-sun', 'fa-moon');
-    } else {
-        document.body.classList.add('tema-escuro');
-        localStorage.theme = 'dark';
-        btnTema.classList.replace('fa-moon', 'fa-sun');
-    }
-});
-
-
-temaMobile.addEventListener('click', () => {
-    
-    if(localStorage.theme == 'dark') {
-        document.body.classList.remove('tema-escuro');
-        localStorage.theme = 'light';
         temaMobile.classList.replace('fa-sun', 'fa-moon');
     } else {
         document.body.classList.add('tema-escuro');
         localStorage.theme = 'dark';
+        btnTema.classList.replace('fa-moon', 'fa-sun');
         temaMobile.classList.replace('fa-moon', 'fa-sun');
     }
-});
-
+}
 
 document.addEventListener('DOMContentLoaded', () => {
     if(localStorage.theme == 'dark') {
         document.body.classList.add('tema-escuro');
+        btnTema.classList.replace('fa-moon', 'fa-sun');
+        temaMobile.classList.replace('fa-moon', 'fa-sun');
     } 
 });
+
+btnTema.addEventListener('click', () => { tema(); });
+temaMobile.addEventListener('click', () => { tema(); });
 
 const carouselOptions = {
     index: 0,
@@ -128,7 +121,7 @@ const carouselMove = (direction) => {
     }
 }
 window.onload = () => {
-    initCarousel()
+    initCarousel();
     document.getElementById('previous').onclick = () => {carouselMove(-1)};
     document.getElementById('next').onclick = () => {carouselMove(1)};
 }
