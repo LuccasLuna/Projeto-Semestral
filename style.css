@@ -885,10 +885,12 @@ main#servicos {
   width: 100%;
   height: auto;
   background-color: var(--color-pink);
+  /*
   background-image: url(imagens/imagemfundo-empresa.svg);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
+  */
   color: white;
 }
 
