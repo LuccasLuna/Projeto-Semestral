@@ -10,7 +10,10 @@ Telas Grandes: acima de 1200px
 */
 
 @media screen and (max-width: 1160px) { 
-
+    #container-nav {
+        display: flex;
+        justify-content: space-between;
+    }
 
     #lista-nav {
         display: none;

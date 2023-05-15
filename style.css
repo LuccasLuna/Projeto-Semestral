@@ -74,11 +74,15 @@ nav {
   align-items: center;
   padding: 0 10%;
 }
+#container-nav .imagem-logo {
+  display: flex;
+  align-items: center;
+}
 
 #lista-nav ul {
   display: flex;
   list-style: none;
-
+  align-items: center;
 }
 
 #lista-nav a {
@@ -105,6 +109,7 @@ nav {
 #login ul {
   display: flex;
   list-style: none;
+  align-items: center;
 }
 
 #login .login {
@@ -829,7 +834,7 @@ main#servicos {
 }
 
 .projetos:nth-child(8) {
-  background-image: url(imagens/logo-empresas/loggi.png);
+  background-image: url(imagens/logo-empresas/spotify.jpg);
 }
 
 .texto-projeto {
@@ -1008,7 +1013,17 @@ main#servicos {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  
+}
+
+@media (max-width: 500px) {
+  .imagem-quem-somos {
+    width: 100%;
+    background-size: contain;
+  }
+  .imagem-nossa-missao {
+    width: 100%;
+    background-size: contain;
+  }
 }
 
 
