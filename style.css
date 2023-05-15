@@ -36,17 +36,18 @@ body::-webkit-scrollbar {
   --color-purple-100: #5700dabb;
   --color-purple-200: #4106cd;
 
+  --color-pink: #7537a6;
 
   /*---fontes---*/
 
   --font-h1: clamp(2rem, 7vw + 0.1rem, 4rem);
 }
 
-body,
-html {
+body, html {
   scroll-behavior: smooth;
   transition: width 0.3s, height 0.3s;
   transition-timing-function: ease;
+  font-family: sans-serif;
 }
 
 
@@ -789,7 +790,7 @@ main#servicos {
   color: white;
   text-align: center;
   font-size: 1.2em;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
 }
 
 .projetos {
@@ -874,6 +875,143 @@ main#servicos {
   height: 120px;
 
 }
+/* ----------------- sobre a empresa --------------------- */
+#empresa{
+  width: 100%;
+  height: auto;
+  background-color: var(--color-pink);
+  background-image: url(imagens/imagemfundo-empresa.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  color: white;
+}
+
+.titulo-empresa {
+  width: 100%;
+  height: auto;
+}
+
+.titulo-empresa h3 {
+  font-size: 2.5em;
+  text-align: center;
+  padding-bottom: 25px;
+  padding-top: 72px;
+  
+}
+.titulo-empresa p {
+  font-size: 1.2em;
+  text-align: center;
+  padding: 0 20%;
+  padding-bottom: 25px;
+}
+
+
+.quem-somos{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.texto-quem-somos {  
+  display: flex;
+  width: 750px;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.texto-quem-somos h4 {
+  font-size: 1.5em;
+  text-align: center;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.texto-quem-somos p {
+  font-size: 1.2em;
+  padding: 0 4%;
+  text-align: justify;
+  font-weight: lighter;
+}
+
+.caixa-texto {
+  padding: 0 10%;
+  
+}
+
+
+.imagem-quem-somos {
+  width: 750px;
+  background-image: url(imagens/blob-haikei.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.caixa-imagem-somos {
+  width: 500px;
+  height: 500px;
+  background-image: url(imagens/empresa.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.nossa-missao{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.texto-nossa-missao{  
+  display: flex;
+  width: 750px;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.texto-nossa-missao h4 {
+  font-size: 1.5em;
+  text-align: center;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.texto-nossa-missao p {
+  font-size: 1.2em;
+  padding: 0 4%;
+  text-align: justify;
+  font-weight: lighter;
+}
+
+.imagem-nossa-missao {
+  width: 750px;
+  background-image: url(imagens/blob-haikei-2.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.caixa-imagem-missao {
+  width: 500px;
+  height: 500px;
+  background-image: url(imagens/Team\ work-bro.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  
+}
+
+
 
 /* ----------------- Contato --------------------- */
 
