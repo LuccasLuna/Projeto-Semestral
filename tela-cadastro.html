@@ -11,11 +11,8 @@
 
 <body>
     <div class="container">
-        <div class="form-image">
-            <img src="assets/img//undraw_shopping_re_3wst.svg" alt="">
-        </div>
         <div class="form">
-            <form action="#">
+            <form action="#" id="formulario">
                 <div class="form-header">
                     <div class="title">
                         <h1>Cadastre-se</h1>
@@ -59,14 +56,22 @@
                     </div>
                 </div>
 
-                
-
                 <div class="continue-button">
-                    <button><a href="#">Continuar</a> </button>
+                    <button >Continuar</button>
                 </div>
             </form>
         </div>
     </div>
+    <script>
+        const form = document.getElementById('formulario');
+        form.addEventListener('submit', function enviouMensagem(evento) {
+            evento.preventDefault();
+        
+            alert('Cadastro criado com sucesso!');
+            
+            window.location.href = "index.html";    
+        });
+    </script>
 </body>
 
 </html>
