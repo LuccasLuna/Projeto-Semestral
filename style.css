@@ -206,6 +206,7 @@ nav {
   padding-bottom: 7%;
   font-size: var(--font-h1);
   text-shadow: 5px 5px 0px #4a5caa67;
+  text-shadow: 4px 4px 0px #5629be67;
 }
 
 .line-up h1 {
