@@ -10,6 +10,16 @@
     <title>login</title>
 </head>
 <body>   
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
     <main id="container">
         <form id="login_form">
             <!-- FORM HEADER -->
@@ -39,7 +49,7 @@
             <!-- INPUTS -->
             <div id="inputs">
                 <div class="input-box">
-                    <label for="name"> Name
+                    <label for="name"> Nome
                         <div class="input-field">
                             <i class="fa-solid fa-user"></i>
                             <input type="text" id="name" name="name" required>
@@ -61,7 +71,7 @@
                 <!-- PASSWORD -->
                 <div class="input-box">
                     <label for="password">
-                        Password
+                        Senha
                         <div class="input-field">
                             <i class="fa-solid fa-key"></i>
                             <input type="password" id="password" name="password" required>
@@ -71,7 +81,7 @@
                     <!-- FORGOT PASSWORD -->
                     <div id="forgot_password">
                         <a href="#">
-                            Forgot your password?
+                            Esqueceu sua sennha?
                         </a>
                     </div>
                 </div>

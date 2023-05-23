@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="midiaquery.css">
     <script src="script.js" defer></script>
+   
 
 
     <link
@@ -29,6 +30,16 @@
 </head>
 
 <body onresize="tamanhoTela()">
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
     <nav>
         <div id="container-nav">
             <div class="imagem-logo">
@@ -433,7 +444,7 @@
 
     </footer>
 
-
+    
 </body>
 
 </html>
