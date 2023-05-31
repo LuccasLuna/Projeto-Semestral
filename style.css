@@ -42,7 +42,7 @@ body::-webkit-scrollbar {
 
   /*---fontes---*/
 
-  --font-h1: clamp(2rem, 7vw + 0.1rem, 4rem);
+  --font-h1: clamp(1.8rem, 5vw + 0.1rem, 4rem);
   
 }
 
@@ -199,9 +199,9 @@ nav {
   text-align: start;
   flex-direction: column;
   font-weight: bolder;
-  /*color: rgb(89, 95, 148); */
+  /*color: rgb(89, 95, 148); 
   color: rgb(140, 147, 218);
-  color: rgb(99, 105, 168);
+  color: rgb(99, 105, 168);*/
   color: rgb(82, 87, 146);
   text-align: start;
   padding: 0 45% 50px 5%;
