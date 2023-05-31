@@ -191,7 +191,7 @@ nav {
 
 #texto-banner h1 span{
   color: white;
-  font-size: 2em;
+  font-size: 1.7em;
 }
 
 #texto-banner h1{
@@ -201,6 +201,7 @@ nav {
   font-weight: bolder;
   /*color: rgb(89, 95, 148); */
   color: rgb(140, 147, 218);
+  color: rgb(99, 105, 168);
   text-align: start;
   padding: 0 45% 50px 5%;
   padding-bottom: 5%;
